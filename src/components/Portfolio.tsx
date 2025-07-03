@@ -13,7 +13,7 @@ export default function Portfolio() {
                     Exceptional work <br /> you deserve
                 </h2>
                 <p className="max-w-[480px] text-sm text-gray-400 mt-2">
-                    From tech startups to healthcare giants, e-commerce pioneers to edtech, we've left our mark on diverse domains.
+                    From tech startups to healthcare giants, e-commerce pioneers to edtech, we&apos;ve left our mark on diverse domains.
                 </p>
             </div>
 
