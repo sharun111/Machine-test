@@ -8,7 +8,7 @@ export default function Services() {
                         width: "477px",
                         height: "321px",
                         padding: "117px 195px",
-                        backgroundImage: "url('/cc30cac8292777e20fd312b3cec87119032513b0.jpg')",
+                        backgroundImage: "url(/cc30cac8292777e20fd312b3cec87119032513b0.jpg)",
 
                     }}
                 >
