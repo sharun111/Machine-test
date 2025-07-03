@@ -1,6 +1,6 @@
 export default function Footer(){
     return(
-         <section className="w-full bg-black bg-[url('/your-pattern-image.png')] bg-cover text-white py-20 px-[100px] font-montserrat max-w-[1440px] mx-auto">
+         <section className="w-full bg-black bg-[url(/your-pattern-image.png)] bg-cover text-white py-20 px-[100px] font-montserrat max-w-[1440px] mx-auto">
                 <div className="flex flex-col items-center text-center gap-6 mb-[182px]">
                     <h2 className="text-3xl md:text-5xl font-medium leading-snug">
                         Need more clarity?<br />Get in touch!
