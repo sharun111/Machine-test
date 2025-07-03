@@ -1,4 +1,4 @@
-'use client';
+"use client";
 
 export default function Faq() {
   return (
@@ -17,8 +17,8 @@ export default function Faq() {
       <div className="flex flex-col gap-4 w-full max-w-[880px]">
         {[
           "Is it really unlimited?",
-          "Why wouldn't I just hire a freelancer?",
-          "Why wouldn't I just hire a full-time designer?",
+          "Why wouldn&apos;t I just hire a freelancer?",
+          "Why wouldn&apos;t I just hire a full-time designer?",
           "Can I pause, renew or cancel at any time?",
           "Are there any contracts?",
           "How do we communicate?",
@@ -26,7 +26,7 @@ export default function Faq() {
           "What is an active task?",
           "Who are the designers?",
           "How many designs can be done in a single month?",
-          "Are there any refunds if I don't like the designs?"
+          "Are there any refunds if I don&apos;t like the designs?"
         ].map((question, idx) => (
           <div
             key={idx}

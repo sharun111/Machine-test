@@ -13,14 +13,15 @@ export default function Delivery(){
 
                     <div className="flex flex-wrap justify-center gap-4">
                         {[
-                            'UI/UX design',
-                            'Graphic design',
-                            'Logo design',
-                            'Branding',
-                            'Animation',
-                            'Social Media',
-                            'Web Development',
-                            'Print Design'
+                            "UI/UX design",
+                            "Graphic design",
+                            "Logo design",
+                            "Branding",
+                            "Animation",
+                            "Social Media",
+                            "Web Development",
+                            "Print Design",
+                            
                         ].map((tag, i) => (
                             <button
                                 key={i}
