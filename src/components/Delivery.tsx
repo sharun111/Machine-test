@@ -1,37 +1,59 @@
-export default function Delivery(){
-    return(
-         <section className="w-full flex justify-center bg-black py-12 mb-[100px] ">
-                <div className="max-w-[880px] w-full px-[100px] text-center text-white font-montserrat">
+"use client";
+import { motion } from "framer-motion";
 
-                    <div className="inline-block bg-black border border-yellow-300 text-yellow-300 px-4 py-1 rounded-full text-sm mb-6">
-                        Services
-                    </div>
+export default function Delivery() {
+  const tags = [
+    "UI/UX design",
+    "Graphic design",
+    "Logo design",
+    "Branding",
+    "Animation",
+    "Social Media",
+    "Web Development",
+    "Print Design",
+  ];
 
-                    <h2 className="text-4xl font-medium leading-snug mb-10">
-                        All you want,<br />delivered on time
-                    </h2>
+  return (
+    <section className="w-full flex justify-center bg-black py-12 mb-[100px]">
+      <div className="max-w-[880px] w-full px-[100px] text-center text-white font-montserrat">
+        {/* Header */}
+        <div className="inline-block bg-black border border-yellow-300 text-yellow-300 px-4 py-1 rounded-full text-sm mb-6">
+          Services
+        </div>
 
-                    <div className="flex flex-wrap justify-center gap-4">
-                        {[
-                            "UI/UX design",
-                            "Graphic design",
-                            "Logo design",
-                            "Branding",
-                            "Animation",
-                            "Social Media",
-                            "Web Development",
-                            "Print Design",
-                            
-                        ].map((tag, i) => (
-                            <button
-                                key={i}
-                                className="bg-[#1a1a1a] text-white px-4 py-2 rounded-md text-sm border border-gray-700 hover:bg-gray-800 transition"
-                            >
-                                {tag}
-                            </button>
-                        ))}
-                    </div>
-                </div>
-            </section>
-    )
+        <h2 className="text-4xl font-medium leading-snug mb-10">
+          All you want,<br />
+          delivered on time
+        </h2>
+
+        {/* Marquee wrapper */}
+        <div className="overflow-hidden space-y-4">
+          {[1, 2].map((row) => (
+            <div key={row} className="relative w-full overflow-hidden">
+              <motion.div
+                className="flex gap-4 w-max"
+                initial={{ x: 0 }}
+                animate={{ x: "-50%" }}
+                transition={{
+                  repeat: Infinity,
+                  ease: "linear",
+                  duration: 30, // ⏱️ Slower = smoother
+                }}
+              >
+                {/* Duplicate tags back-to-back */}
+                {[...tags, ...tags].map((tag, i) => (
+                  <div
+                    key={`${row}-${i}`}
+                    className="px-4 py-2 bg-[#1a1a1a] text-white text-sm rounded-md border border-gray-700 whitespace-nowrap"
+                  >
+                    {tag}
+                  </div>
+                ))}
+              </motion.div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
 }

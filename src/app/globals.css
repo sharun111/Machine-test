@@ -73,3 +73,7 @@ body {
 html {
   scroll-behavior: smooth;
 }
+
+.animate-marquee {
+  animation: marquee 20s linear infinite;
+}
