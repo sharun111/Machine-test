@@ -16,7 +16,6 @@ export default function Delivery() {
   return (
     <section className="w-full flex justify-center bg-black py-12 mb-[100px]">
       <div className="max-w-[880px] w-full px-[100px] text-center text-white font-montserrat">
-        {/* Header */}
         <div className="inline-block bg-black border border-yellow-300 text-yellow-300 px-4 py-1 rounded-full text-sm mb-6">
           Services
         </div>
@@ -26,7 +25,6 @@ export default function Delivery() {
           delivered on time
         </h2>
 
-        {/* Marquee wrapper */}
         <div className="overflow-hidden space-y-4">
           {[1, 2].map((row) => (
             <div key={row} className="relative w-full overflow-hidden">
@@ -37,10 +35,9 @@ export default function Delivery() {
                 transition={{
                   repeat: Infinity,
                   ease: "linear",
-                  duration: 30, // ⏱️ Slower = smoother
+                  duration: 30,
                 }}
               >
-                {/* Duplicate tags back-to-back */}
                 {[...tags, ...tags].map((tag, i) => (
                   <div
                     key={`${row}-${i}`}
