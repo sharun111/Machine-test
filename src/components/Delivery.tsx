@@ -28,10 +28,15 @@ export default function Delivery() {
         <div className="overflow-hidden space-y-4">
           {[1, 2].map((row) => (
             <div key={row} className="relative w-full overflow-hidden">
+               {/* Left fade */}
+              <div className="absolute left-0 top-0 h-full w-20 bg-gradient-to-r from-black to-transparent z-10 pointer-events-none" />
+              
+              {/* Right fade */}
+              <div className="absolute right-0 top-0 h-full w-20 bg-gradient-to-l from-black to-transparent z-10 pointer-events-none" />
               <motion.div
                 className="flex gap-4 w-max"
-                initial={{ x: 0 }}
-                animate={{ x: "-50%" }}
+                 initial={{ x: row === 1 ? "0%" : "-25%" }}
+                animate={{ x: row === 1 ? "-50%" : "-75%" }}
                 transition={{
                   repeat: Infinity,
                   ease: "linear",

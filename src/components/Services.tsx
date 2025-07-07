@@ -102,12 +102,12 @@ export default function Services() {
             </div>
             <section className="w-full bg-transparent  ">
                 <div className="w-[1240px] h-[183.19px] mx-auto px-[100px] flex flex-col justify-center font-sans text-white gap-4">
-                    {/* Heading */}
+                    
                     <p className=" h-[39.18px] pb-[6.18px] text-sm tracking-wide text-gray-300 uppercase text-center">
                         As seen and loved on
                     </p>
 
-                    {/* Logos */}
+                    
                     <div className="overflow-x-auto whitespace-nowrap scroll-smooth scrollbar-hide">
                         <div className="inline-flex gap-10 items-center">
                             <img src="/SVG.png" alt="Dribbble" className="w-[121px] h-[39.18px] pb-[6.18px]" />
@@ -126,11 +126,6 @@ export default function Services() {
                     </div>
                 </div>
             </section>
-
-
-
-
-
 
         </section>
     )
